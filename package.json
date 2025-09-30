@@ -1,0 +1,33 @@
+{
+  "name": "whatsapp-bot",
+  "version": "1.0.0",
+  "description": "Продвинутый WhatsApp бот с множеством функций",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "nodemon main.js",
+    "pm2:start": "pm2 start main.js --name whatsapp-bot",
+    "pm2:stop": "pm2 stop whatsapp-bot",
+    "pm2:restart": "pm2 restart whatsapp-bot",
+    "pm2:logs": "pm2 logs whatsapp-bot"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "javascript",
+    "automation",
+    "chatbot"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "whatsapp-web.js": "^1.23.0",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
